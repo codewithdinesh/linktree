@@ -14,7 +14,15 @@ const admin = () => {
     return (
 
         <Container>
-            <div>Hi bro</div>
+
+            {/* Add new Link container */}
+            <div className='flex items-center justify-center'>
+
+                {/* add link button */}
+                <button className='button p-2 font-semibold text-white  rounded-full bg-violet-500'> &#x2b; Add Link</button>
+
+            </div>
+
         </Container>
 
     )
