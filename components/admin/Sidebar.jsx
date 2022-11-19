@@ -1,28 +1,38 @@
 import React from 'react'
+import AccountIcon from '../icons/AccountIcon'
+import Announcement from '../icons/Announcement'
+import SupportIcon from '../icons/SupportIcon'
+import Tree from '../icons/Tree'
+import SidebarIcon from './SidebarIcon'
 
 const Sidebar = () => {
     return (
         <div className='flex flex-col justify-between text-red-500 h-screen p-1'>
 
             {/* icon-  logo */}
-            <div>
-                Hi
-            </div>
+
+            <SidebarIcon>
+                <Tree />
+            </SidebarIcon>
 
 
-
-            <div>
+            <div className='flex-col items-center justify-center'>
                 {/* Support and anouncement */}
+                <SidebarIcon link={"support"}>
+                    <SupportIcon />
+                </SidebarIcon>
 
-                <div>
-                    support
-                </div>
+                {/* Announcement Icon */}
+                <SidebarIcon link={"announcement"}>
+                    <Announcement />
+                </SidebarIcon>
+
                 {/* Account */}
-
-                <div>
-                    Account
-                </div>
+                <SidebarIcon link={"account"}>
+                    <AccountIcon />
+                </SidebarIcon>
             </div>
+
         </div>
     )
 }
